@@ -36,7 +36,7 @@ app.use(function(err, req, res, next) {
 });
 
 // Get port from environment and store in Express.
-const port = normalizePort(process.env.PORT || '3000');
+const port =  3001;
 app.set('port', port);
 
 // Create HTTP server.
@@ -45,18 +45,18 @@ const server = app.listen(port, function() {
 });
 
 // Normalize a port into a number, string, or false.
-function normalizePort(val) {
-  const port = parseInt(val, 10);
+// function normalizePort(val) {
+//   const port = parseInt(val, 10);
 
-  if (isNaN(port)) {
-    // named pipe
-    return val;
-  }
+//   if (isNaN(port)) {
+//     // named pipe
+//     return val;
+//   }
 
-  if (port >= 0) {
-    // port number
-    return port;
-  }
+//   if (port >= 0) {
+//     // port number
+//     return port;
+//   }
 
-  return false;
-}
+//   return false;
+// }
