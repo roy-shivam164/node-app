@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"node ./bin/www"
+    "build":"node index.js"
   },
   "author": "",
   "license": "ISC",
